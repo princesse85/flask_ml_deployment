@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Prediction</title>
+</head>
+<body>
+   
+    <h1>
+        <Temperature Prediction >
+            </h1>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: hsl(222, 67%, 49%);
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+  
+      .container {
+        background: white;
+        padding: 25px;
+        width: 350px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    <form action ="/predict" method="POST">
+        <label for="precipitation">Precipitation (mm):</label>
+        <input type="number" id="precipitation" name="precipitation" required>
+        <br><br>
+
+        <label for="apparent_temperature">Apparent Temperature (°C):</label>
+        <input type="number" id="apparent_temperature" name="apparent_temperature" required>
+        <br><br>
+
+        <button type="submit">Predict Temperature</button>
+    </form>
+      input, button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    button {
+        background: #4a74f5;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+</style>
+
+</body>
+</html>
